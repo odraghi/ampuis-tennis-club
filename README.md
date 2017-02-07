@@ -26,3 +26,14 @@ Run `grunt --force` for building and `grunt serve` for preview.
 
 Running `grunt test` will run the unit tests with karma.
 
+
+### Fixe font-awesome 
+Add the css file in bower_components/font-awesome/bower.json
+```
+  "main": [
+    "less/font-awesome.less",
+    "scss/font-awesome.scss",
+    "css/font-awesome.css"
+  ],
+
+```
