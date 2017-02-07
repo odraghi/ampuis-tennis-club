@@ -1,0 +1,65 @@
+
+.main {
+  margin-top: 50px;
+}
+
+body {
+    font: 13px "Montserrat", sans-serif;
+    line-height: 1.8;
+}
+p {font-size: 13px;}
+blockquote{font-size: 13px;}
+
+.bg-orange{
+  background-color: #be3d00;
+  color: #FFFFFF;
+}
+.bg-green{
+  background-color: #4a8b2d;
+  color: #FFFFFF;
+}
+.bg-white{
+  background-color: #FFFFFF;
+  color: #555555;
+}
+/**====================================================================================================
+*   NAVBAR
+**====================================================================================================*/
+.navbar {
+  background-color: #ffffff;
+}
+.navbar img {
+  height: 60px;
+  border-radius: 5px;
+  transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+}
+.navbar img:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.navbar-default .navbar-nav li a:focus {
+  background-color: #d2d2d2;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 2px 15px 15px 15px;
+}
