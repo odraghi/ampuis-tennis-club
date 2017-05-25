@@ -8,9 +8,21 @@ Made with angularJS-1.x
 Source file in app/ directory
 
 
-## Install Dev env
+## Dev env
 ```
-npm install -g grunt-cli bower yo generator-karma generator-angular
+#npm install -g grunt-cli bower yo generator-karma generator-angular
+sudo docker run --label yo-angular \
+    -it --publish 4000:4000 \
+    --volume /vagrant/ampuis-tennis-club:/src \
+    munjalpatel/yo-angular bash
+
+# Test dist
+sudo docker run --rm --name nginx --publish 9000:80 --volume /vagrant/ampuis-tennis-club/dist:/usr/share/nginx/html:ro nginx
+
+```
+## Vagrant tip for links on windows host inside docker
+```
+npm config set bin-links false
 ```
 
 ## Make a new route
@@ -37,3 +49,4 @@ Add the css file in bower_components/font-awesome/bower.json
   ],
 
 ```
+
